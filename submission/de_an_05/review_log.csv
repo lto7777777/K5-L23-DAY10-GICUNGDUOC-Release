@@ -1,0 +1,9 @@
+image,type,verdict,note
+img_0015,missing_box,confirmed,"mở ảnh: khay có ba chiếc hot dog, chiếc bên phải rắc hành tây không có box nào trùm trong khi hai chiếc kia đều có box hot dog"
+img_0048,instance_merge,rejected,"đếm được 13 box hot dog và 14 segment hot dog, nhiều segment hơn box nên không phải dấu hiệu gộp"
+img_0050,instance_merge,confirmed,"mở ảnh: tô mì có hai nhánh bông cải xanh nằm ở hai góc đối diện, một ở trên phải một ở dưới trái, nhưng chỉ một segment broccoli tô cả hai; hai box broccoli không hề chồng nhau, IoU bằng 0"
+img_0072,instance_merge,rejected,"đếm được 6 box car và 6 segment car, số bằng nhau nên không có xe nào bị gộp"
+img_0076,class_swap,confirmed,"mở ảnh: xe buýt trường học màu vàng dài, thân xe in chữ FIRST STUDENT, rõ ràng không phải xe con; panoptic ghi bus đúng, detection ghi car sai"
+img_0130,category_swap,confirmed,"mở ảnh: con voi đứng sau hàng rào dây, thấy rõ vòi, tai và chân voi; detection ghi elephant đúng, panoptic ghi frisbee sai"
+img_0197,bbox_drift,rejected,ảnh đã mang lỗi thing_overlap bắt được ở phần luật; segment person lấn sang vật bên cạnh nên mới có pixel nằm ngoài box
+img_0200,instance_merge,rejected,"đếm được 14 box cow và 15 segment cow, nhiều segment hơn box nên không phải dấu hiệu gộp"

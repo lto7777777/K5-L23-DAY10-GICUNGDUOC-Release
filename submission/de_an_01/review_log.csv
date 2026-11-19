@@ -1,0 +1,23 @@
+image,type,verdict,note
+img_0005,instance_merge,rejected,mở ảnh: hai box person chồng nhau quanh cùng một người; đếm được 4 box person và 4 segment person nên không có vật nào bị gộp
+img_0015,bbox_drift,rejected,"đo trên mask: box person vẫn giữ 92% pixel của người, bbox trùng 0,73; mức này nằm trong khoảng lệch tự nhiên của cảnh đông người"
+img_0019,class_swap,confirmed,"mở ảnh: đứa bé cầm cái điều khiển TV màu xám có hàng phím số và nút đỏ ở đầu, không phải điện thoại; panoptic ghi remote đúng, detection ghi cell phone sai"
+img_0023,instance_merge,rejected,mở ảnh: mấy xe máy dựng sát nhau nên box chồng lên nhau; đếm được 4 box motorcycle và 4 segment motorcycle nên không có vật bị gộp
+img_0029,class_swap,confirmed,"mở ảnh: trong bếp có chảo nướng trên bếp, vật bị đánh dấu là lưng ghế trắng sát mép khung hình, là ghế rời chứ không phải ghế sofa; panoptic ghi chair đúng, detection ghi couch sai"
+img_0041,missing_box,confirmed,"mở ảnh: một bàn tay cầm dao cắt bánh cưới, lưỡi dao nhìn rất rõ nhưng cả ảnh chỉ có box person và box cake, không có box knife nào"
+img_0052,bbox_drift,rejected,"đo trên mask: box baseball bat giữ 86% pixel, bbox trùng 0,73; cảnh có 5 box và 6 segment nên phần lệch này là chồng lấn tự nhiên"
+img_0056,bbox_drift,rejected,"mở ảnh: vật bị đánh dấu là chiếc xe nhỏ bị cắt ở mép trái khung hình chứ không phải cabin xanh lớn; cabin xanh được cả hai nguồn ghi là bus, box và segment trùng nhau IoU 1,00 nên không có bất đồng để báo"
+img_0059,instance_merge,rejected,"đếm được 13 box book và 14 segment book, nhiều segment hơn box nên không phải dấu hiệu gộp; giá sách xếp sát nhau làm box chồng nhau"
+img_0065,category_swap,confirmed,"mở ảnh: mặt một con bò Hereford trắng nâu nhìn thẳng, thấy rõ mõm và tai bò; detection ghi cow đúng, panoptic ghi horse sai"
+img_0082,instance_merge,rejected,"đếm được 3 box elephant và 3 segment elephant; hai box chồng nhau 0,41 là hai con đứng cạnh nhau chứ không phải một segment phủ hai con"
+img_0089,instance_merge,rejected,"mở ảnh: con mèo nằm trên ghế, hai box chair chồng nhau quanh ghế đó; 2 box chair và 2 segment chair nên không có vật bị gộp"
+img_0108,category_swap,confirmed,"mở ảnh: con mèo nằm trên chiếc laptop mở nắp, nhìn rõ bản lề và màn hình gập; detection ghi laptop đúng, panoptic ghi tv sai"
+img_0147,instance_merge,rejected,"đếm được 10 box cow và 10 segment cow, số bằng nhau nên không có con nào bị gộp; đàn bò đứng sát nhau làm box chồng nhau"
+img_0164,instance_merge,rejected,"đếm được 13 box car và 14 segment car, nhiều segment hơn box nên không phải dấu hiệu gộp"
+img_0171,bbox_drift,rejected,"đo trên mask: box cup giữ 90% pixel, bbox trùng 0,70; ảnh có 3 box cup và 2 segment cup, phần lệch là do cốc bị vật khác che"
+img_0177,missing_box,confirmed,"mở ảnh: con mèo Xiêm nằm trên chiếc laptop bạc đang mở, cả ảnh chỉ có box cat, không có box laptop nào"
+img_0190,class_swap,confirmed,"mở ảnh: phần mông và cái đuôi dài đen rủ xuống của một con ngựa đứng bên sông, đuôi dài mượt là đuôi ngựa chứ không phải đuôi bò; panoptic ghi horse đúng, detection ghi cow sai"
+img_0226,bbox_drift,rejected,"đo trên mask: box person giữ 91% pixel và bbox trùng tới 0,98, box ôm đúng người, phần thiếu là do bị che"
+img_0228,instance_merge,rejected,mở ảnh: cái ly bạc trên bàn ăn bị hai box wine glass lệch nhau bao quanh; 6 box và 6 segment wine glass nên không có ly nào bị gộp
+img_0231,bbox_drift,rejected,"đo trên mask: box dog giữ 89% pixel, bbox trùng 0,96, box vẫn ôm đúng con chó"
+img_0249,instance_merge,rejected,"đếm được 3 box scissors và 3 segment scissors; hai box chồng nhau 0,46 là hai cái kéo đặt cạnh nhau"

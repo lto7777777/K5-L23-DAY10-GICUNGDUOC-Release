@@ -1,0 +1,208 @@
+{
+ "candidates": [
+  {
+   "image": "img_0004",
+   "segment": 1288850,
+   "segment_class": "cow",
+   "segment_px": 901,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    8,
+    7
+   ],
+   "why": "một segment cow phủ 2 box cùng lớp (cover 0.58, 0.54): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0012",
+   "segment": 10050906,
+   "segment_class": "bench",
+   "segment_px": 2513,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 4,
+   "box_class": "chair",
+   "contain": 0.999,
+   "iou": 0.982,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi chair, panoptic ghi bench (contain 1.00, bbox IoU 0.98)"
+  },
+  {
+   "image": "img_0026",
+   "segment": 11474770,
+   "segment_class": "zebra",
+   "segment_px": 40406,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 0,
+   "contain": 0.615,
+   "iou": 0.783,
+   "why": "box zebra để 39% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.78)"
+  },
+  {
+   "image": "img_0027",
+   "segment": 1944881,
+   "segment_class": "elephant",
+   "segment_px": 2651,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 0,
+   "box_class": "traffic light",
+   "contain": 1.0,
+   "iou": 0.973,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi traffic light, panoptic ghi elephant (contain 1.00, bbox IoU 0.97)"
+  },
+  {
+   "image": "img_0044",
+   "segment": 5991998,
+   "segment_class": "person",
+   "segment_px": 8416,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 0,
+   "contain": 0.734,
+   "iou": 0.55,
+   "why": "box person để 27% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.55)"
+  },
+  {
+   "image": "img_0055",
+   "segment": 13818917,
+   "segment_class": "car",
+   "segment_px": 11010,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    1,
+    4
+   ],
+   "why": "một segment car phủ 2 box cùng lớp (cover 0.79, 0.63): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0061",
+   "segment": 2321371,
+   "segment_class": "truck",
+   "segment_px": 20480,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 2,
+   "contain": 0.901,
+   "iou": 0.227,
+   "why": "box truck để 10% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.23)"
+  },
+  {
+   "image": "img_0090",
+   "segment": 136412,
+   "segment_class": "umbrella",
+   "segment_px": 6157,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    0,
+    3
+   ],
+   "why": "một segment umbrella phủ 2 box cùng lớp (cover 0.64, 0.68): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0092",
+   "segment": 6896330,
+   "segment_class": "sheep",
+   "segment_px": 2305,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 6,
+   "contain": 0.805,
+   "iou": 0.168,
+   "why": "box sheep để 19% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.17)"
+  },
+  {
+   "image": "img_0124",
+   "segment": 3166103,
+   "segment_class": "bird",
+   "segment_px": 15639,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 0,
+   "box_class": "kite",
+   "contain": 1.0,
+   "iou": 0.986,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi kite, panoptic ghi bird (contain 1.00, bbox IoU 0.99)"
+  },
+  {
+   "image": "img_0173",
+   "segment": 11117442,
+   "segment_class": "handbag",
+   "segment_px": 5709,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    2,
+    7
+   ],
+   "why": "một segment handbag phủ 2 box cùng lớp (cover 0.58, 0.61): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0191",
+   "segment": 13830730,
+   "segment_class": "person",
+   "segment_px": 4564,
+   "types": [
+    "missing_box"
+   ],
+   "why": "segment person 4564 px, không box person nào chứa >= 50% pixel của nó"
+  },
+  {
+   "image": "img_0196",
+   "segment": 14231100,
+   "segment_class": "person",
+   "segment_px": 632,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 11,
+   "contain": 0.899,
+   "iou": 0.927,
+   "why": "box person để 10% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.93)"
+  },
+  {
+   "image": "img_0213",
+   "segment": 14615838,
+   "segment_class": "zebra",
+   "segment_px": 23033,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 0,
+   "contain": 0.689,
+   "iou": 0.766,
+   "why": "box zebra để 31% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.77)"
+  },
+  {
+   "image": "img_0217",
+   "segment": 5857237,
+   "segment_class": "apple",
+   "segment_px": 62995,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 0,
+   "box_class": "orange",
+   "contain": 1.0,
+   "iou": 0.997,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi orange, panoptic ghi apple (contain 1.00, bbox IoU 1.00)"
+  }
+ ]
+}

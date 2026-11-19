@@ -1,0 +1,235 @@
+{
+ "candidates": [
+  {
+   "image": "img_0022",
+   "segment": 10631268,
+   "segment_class": "car",
+   "segment_px": 867,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    3,
+    10
+   ],
+   "why": "một segment car phủ 2 box cùng lớp (cover 0.67, 0.50): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0025",
+   "segment": 10266844,
+   "segment_class": "book",
+   "segment_px": 978,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    18,
+    6
+   ],
+   "why": "một segment book phủ 2 box cùng lớp (cover 0.58, 0.46): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0043",
+   "segment": 15198428,
+   "segment_class": "person",
+   "segment_px": 16484,
+   "types": [
+    "missing_box"
+   ],
+   "why": "segment person 16484 px, không box person nào chứa >= 50% pixel của nó"
+  },
+  {
+   "image": "img_0057",
+   "segment": 12904634,
+   "segment_class": "truck",
+   "segment_px": 25459,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 0,
+   "box_class": "car",
+   "contain": 1.0,
+   "iou": 0.994,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi car, panoptic ghi truck (contain 1.00, bbox IoU 0.99)"
+  },
+  {
+   "image": "img_0083",
+   "segment": 3915445,
+   "segment_class": "horse",
+   "segment_px": 2364,
+   "types": [
+    "missing_box"
+   ],
+   "why": "segment horse 2364 px, không box horse nào chứa >= 50% pixel của nó"
+  },
+  {
+   "image": "img_0084",
+   "segment": 8714551,
+   "segment_class": "knife",
+   "segment_px": 9849,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 1,
+   "box_class": "fork",
+   "contain": 1.0,
+   "iou": 0.997,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi fork, panoptic ghi knife (contain 1.00, bbox IoU 1.00)"
+  },
+  {
+   "image": "img_0086",
+   "segment": 2281878,
+   "segment_class": "person",
+   "segment_px": 65878,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    1,
+    15
+   ],
+   "why": "một segment person phủ 2 box cùng lớp (cover 0.56, 0.78): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0091",
+   "segment": 12866817,
+   "segment_class": "fork",
+   "segment_px": 4038,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 1,
+   "contain": 0.866,
+   "iou": 0.204,
+   "why": "box fork để 13% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.20)"
+  },
+  {
+   "image": "img_0095",
+   "segment": 3080200,
+   "segment_class": "car",
+   "segment_px": 44925,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 1,
+   "box_class": "truck",
+   "contain": 1.0,
+   "iou": 0.991,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi truck, panoptic ghi car (contain 1.00, bbox IoU 0.99)"
+  },
+  {
+   "image": "img_0130",
+   "segment": 15748771,
+   "segment_class": "donut",
+   "segment_px": 8032,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    7,
+    11
+   ],
+   "why": "một segment donut phủ 2 box cùng lớp (cover 0.69, 0.50): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0139",
+   "segment": 3899269,
+   "segment_class": "person",
+   "segment_px": 35204,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 1,
+   "contain": 0.903,
+   "iou": 0.663,
+   "why": "box person để 10% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.66)"
+  },
+  {
+   "image": "img_0162",
+   "segment": 9569170,
+   "segment_class": "parking meter",
+   "segment_px": 6783,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 1,
+   "contain": 0.779,
+   "iou": 0.607,
+   "why": "box parking meter để 22% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.61)"
+  },
+  {
+   "image": "img_0193",
+   "segment": 5878183,
+   "segment_class": "horse",
+   "segment_px": 2172,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    1,
+    0
+   ],
+   "why": "một segment horse phủ 2 box cùng lớp (cover 0.61, 0.58): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0204",
+   "segment": 2033802,
+   "segment_class": "person",
+   "segment_px": 2922,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    2,
+    3
+   ],
+   "why": "một segment person phủ 2 box cùng lớp (cover 0.84, 0.83): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0219",
+   "segment": 2249038,
+   "segment_class": "spoon",
+   "segment_px": 2015,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 3,
+   "box_class": "microwave",
+   "contain": 0.999,
+   "iou": 0.991,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi microwave, panoptic ghi spoon (contain 1.00, bbox IoU 0.99)"
+  },
+  {
+   "image": "img_0235",
+   "segment": 2332326,
+   "segment_class": "cow",
+   "segment_px": 19736,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 0,
+   "contain": 0.888,
+   "iou": 0.737,
+   "why": "box cow để 11% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.74)"
+  },
+  {
+   "image": "img_0247",
+   "segment": 7754303,
+   "segment_class": "stop sign",
+   "segment_px": 31959,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 1,
+   "box_class": "sandwich",
+   "contain": 0.999,
+   "iou": 0.995,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi sandwich, panoptic ghi stop sign (contain 1.00, bbox IoU 1.00)"
+  }
+ ]
+}

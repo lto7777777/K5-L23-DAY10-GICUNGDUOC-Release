@@ -1,0 +1,113 @@
+{
+ "candidates": [
+  {
+   "image": "img_0015",
+   "segment": 15247058,
+   "segment_class": "hot dog",
+   "segment_px": 19219,
+   "types": [
+    "missing_box"
+   ],
+   "why": "segment hot dog 19219 px, không box hot dog nào chứa >= 50% pixel của nó"
+  },
+  {
+   "image": "img_0048",
+   "segment": 6064180,
+   "segment_class": "hot dog",
+   "segment_px": 2890,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    16,
+    8
+   ],
+   "why": "một segment hot dog phủ 2 box cùng lớp (cover 0.59, 0.50): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0050",
+   "segment": 6262721,
+   "segment_class": "broccoli",
+   "segment_px": 4226,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    2,
+    5
+   ],
+   "why": "một segment broccoli phủ 2 box cùng lớp (cover 0.51, 0.64): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0072",
+   "segment": 586825,
+   "segment_class": "car",
+   "segment_px": 21429,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    1,
+    4
+   ],
+   "why": "một segment car phủ 2 box cùng lớp (cover 0.74, 0.73): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "img_0076",
+   "segment": 9064790,
+   "segment_class": "bus",
+   "segment_px": 52471,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 0,
+   "box_class": "car",
+   "contain": 0.996,
+   "iou": 0.999,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi car, panoptic ghi bus (contain 1.00, bbox IoU 1.00)"
+  },
+  {
+   "image": "img_0130",
+   "segment": 9865943,
+   "segment_class": "frisbee",
+   "segment_px": 118415,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 2,
+   "box_class": "elephant",
+   "contain": 1.0,
+   "iou": 0.998,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi elephant, panoptic ghi frisbee (contain 1.00, bbox IoU 1.00)"
+  },
+  {
+   "image": "img_0197",
+   "segment": 564447,
+   "segment_class": "person",
+   "segment_px": 5448,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 0,
+   "contain": 0.87,
+   "iou": 0.754,
+   "why": "box person để 13% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.75)"
+  },
+  {
+   "image": "img_0200",
+   "segment": 7556236,
+   "segment_class": "cow",
+   "segment_px": 4764,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    6,
+    14
+   ],
+   "why": "một segment cow phủ 2 box cùng lớp (cover 0.60, 0.48): hai vật có thể đã bị gộp thành một segment"
+  }
+ ]
+}
