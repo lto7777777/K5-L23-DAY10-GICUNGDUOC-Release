@@ -73,7 +73,7 @@
     "category_swap"
    ],
    "box": 1,
-   "box_class": "fork",
+   "box_class": "fork",      
    "contain": 1.0,
    "iou": 0.997,
    "why": "cùng vị trí nhưng khác lớp: detection ghi fork, panoptic ghi knife (contain 1.00, bbox IoU 1.00)"
@@ -87,7 +87,7 @@
     "instance_merge"
    ],
    "boxes": [
-    1,
+    1, 
     15
    ],
    "why": "một segment person phủ 2 box cùng lớp (cover 0.56, 0.78): hai vật có thể đã bị gộp thành một segment"
@@ -118,7 +118,7 @@
    "box_class": "truck",
    "contain": 1.0,
    "iou": 0.991,
-   "why": "cùng vị trí nhưng khác lớp: detection ghi truck, panoptic ghi car (contain 1.00, bbox IoU 0.99)"
+   "why": "cùng vị trí nhưng khác lớp: detection ghi truck, panoptic ghi car (contain 1.00, bbox IoU 0.99)."
   },
   {
    "image": "img_0130",
