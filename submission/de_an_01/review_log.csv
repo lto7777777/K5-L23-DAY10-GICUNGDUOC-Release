@@ -6,7 +6,7 @@ img_0023,instance_merge,rejected,mở ảnh: mấy xe máy dựng sát nhau nên
 img_0029,class_swap,confirmed,"mở ảnh: trong bếp có chảo nướng trên bếp, vật bị đánh dấu là lưng ghế trắng sát mép khung hình, là ghế rời chứ không phải ghế sofa; panoptic ghi chair đúng, detection ghi couch sai"
 img_0041,missing_box,confirmed,"mở ảnh: một bàn tay cầm dao cắt bánh cưới, lưỡi dao nhìn rất rõ nhưng cả ảnh chỉ có box person và box cake, không có box knife nào"
 img_0052,bbox_drift,rejected,"đo trên mask: box baseball bat giữ 86% pixel, bbox trùng 0,73; cảnh có 5 box và 6 segment nên phần lệch này là chồng lấn tự nhiên"
-img_0056,bbox_drift,rejected,"mở ảnh: vật bị đánh dấu là chiếc xe nhỏ bị cắt ở mép trái khung hình chứ không phải cabin xanh lớn; cabin xanh được cả hai nguồn ghi là bus, box và segment trùng nhau IoU 1,00 nên không có bất đồng để báo"
+img_0056,bbox_drift,rejected,"mở ảnh: vật bị đánh dấu là chiếc xe nhỏ bị cắt ở mép trái khung hình chứ không phải cabin xanh lớn; cabin xanh được cả hai nguồn ghi là bus, box và segment trùng nhau  IoU 1,00 nên không có bất đồng để báo"
 img_0059,instance_merge,rejected,"đếm được 13 box book và 14 segment book, nhiều segment hơn box nên không phải dấu hiệu gộp; giá sách xếp sát nhau làm box chồng nhau"
 img_0065,category_swap,confirmed,"mở ảnh: mặt một con bò Hereford trắng nâu nhìn thẳng, thấy rõ mõm và tai bò; detection ghi cow đúng, panoptic ghi horse sai"
 img_0082,instance_merge,rejected,"đếm được 3 box elephant và 3 segment elephant; hai box chồng nhau 0,41 là hai con đứng cạnh nhau chứ không phải một segment phủ hai con"
