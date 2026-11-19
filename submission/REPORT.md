@@ -138,3 +138,5 @@ IoU 0,72, nhưng đây là ca nhóm ít chắc chắn nhất trong 13 ứng viê
 `laptop` đè lên tóc người ngồi, nên bản đối chiếu lại báo thêm `missing_box` cho chính cái laptop đó
 (laptop vẫn có box 11 và 12). Không phải bug, nhưng nhóm nào chỉ nhìn danh sách ứng viên mà không mở
 ảnh sẽ nộp thừa một dòng.
+
+**(5) Ngưỡng gộp của validator bỏ lọt ca vật nhỏ.** Khi chạy trên 5 lô đề ẩn, hai ứng viên thực chất là instance_merge bị xếp nhầm thành bbox_drift và missing_box, vì ngưỡng MERGE_CONT = 0.25 đòi mỗi box ôm được một phần tư pixel của segment, trong khi vật nhỏ hơn chỉ chiếm khoảng 10%. Chi tiết và kết quả 5 lô ghi ở docs/de-an-ket-qua.md.
