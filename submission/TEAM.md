@@ -1,4 +1,4 @@
-# Nhóm 03
+# Nhóm GICUNGDUOC
 
 Bài mẫu do nhóm reviewer dựng trên seed luyện tập, để học viên đối chiếu cách làm.
 

@@ -1,4 +1,4 @@
-# Báo cáo nhóm 03
+# Báo cáo nhóm GICUNGDUOC
 
 Seed luyện tập: **3007**. Lô v1: `lab250_95697c6d4612` (250 ảnh). Mọi số dưới đây lấy từ file thật
 trong `runs/r3007/`, đo bằng `scripts/score_findings.py` (chế độ học viên, chỉ in F1 làm tròn).
