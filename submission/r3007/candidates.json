@@ -1,0 +1,173 @@
+{
+ "candidates": [
+  {
+   "image": "000000001818",
+   "segment": 8092282,
+   "segment_class": "zebra",
+   "segment_px": 120106,
+   "types": [
+    "missing_box"
+   ],
+   "why": "segment zebra 120106 px, không box zebra nào chứa >= 50% pixel của nó"
+  },
+  {
+   "image": "000000002157",
+   "segment": 6775145,
+   "segment_class": "wine glass",
+   "segment_px": 4931,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    3,
+    11
+   ],
+   "why": "một segment wine glass phủ 2 box cùng lớp (cover 0.54, 0.46): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "000000005529",
+   "segment": 5463639,
+   "segment_class": "skis",
+   "segment_px": 1628,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    1,
+    2
+   ],
+   "why": "một segment skis phủ 2 box cùng lớp (cover 0.48, 0.48): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "000000007511",
+   "segment": 3026996,
+   "segment_class": "person",
+   "segment_px": 14530,
+   "types": [
+    "missing_box"
+   ],
+   "why": "segment person 14530 px, không box person nào chứa >= 50% pixel của nó"
+  },
+  {
+   "image": "000000007795",
+   "segment": 7435899,
+   "segment_class": "bed",
+   "segment_px": 70150,
+   "types": [
+    "missing_box"
+   ],
+   "why": "segment bed 70150 px, không box bed nào chứa >= 50% pixel của nó"
+  },
+  {
+   "image": "000000009483",
+   "segment": 9270375,
+   "segment_class": "tv",
+   "segment_px": 10757,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 0,
+   "box_class": "laptop",
+   "contain": 1.0,
+   "iou": 0.993,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi laptop, panoptic ghi tv (contain 1.00, bbox IoU 0.99)"
+  },
+  {
+   "image": "000000013291",
+   "segment": 13419440,
+   "segment_class": "frisbee",
+   "segment_px": 2394,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    3,
+    4
+   ],
+   "why": "một segment frisbee phủ 2 box cùng lớp (cover 0.77, 0.75): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "000000013659",
+   "segment": 8351070,
+   "segment_class": "laptop",
+   "segment_px": 15003,
+   "types": [
+    "missing_box"
+   ],
+   "why": "segment laptop 15003 px, không box laptop nào chứa >= 50% pixel của nó"
+  },
+  {
+   "image": "000000017182",
+   "segment": 3944728,
+   "segment_class": "book",
+   "segment_px": 3804,
+   "types": [
+    "instance_merge"
+   ],
+   "boxes": [
+    1,
+    2
+   ],
+   "why": "một segment book phủ 2 box cùng lớp (cover 0.86, 0.58): hai vật có thể đã bị gộp thành một segment"
+  },
+  {
+   "image": "000000019742",
+   "segment": 1257078,
+   "segment_class": "baseball bat",
+   "segment_px": 34436,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 0,
+   "box_class": "vase",
+   "contain": 0.998,
+   "iou": 0.995,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi vase, panoptic ghi baseball bat (contain 1.00, bbox IoU 0.99)"
+  },
+  {
+   "image": "000000022589",
+   "segment": 6189719,
+   "segment_class": "sheep",
+   "segment_px": 14660,
+   "types": [
+    "bbox_drift"
+   ],
+   "box": 0,
+   "contain": 0.842,
+   "iou": 0.609,
+   "why": "box sheep để 16% pixel của segment cùng lớp rơi ra ngoài box (bbox IoU 0.61)"
+  },
+  {
+   "image": "000000023272",
+   "segment": 7369075,
+   "segment_class": "car",
+   "segment_px": 127847,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 1,
+   "box_class": "bus",
+   "contain": 1.0,
+   "iou": 0.999,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi bus, panoptic ghi car (contain 1.00, bbox IoU 1.00)"
+  },
+  {
+   "image": "000000023781",
+   "segment": 5595317,
+   "segment_class": "motorcycle",
+   "segment_px": 3257,
+   "types": [
+    "class_swap",
+    "category_swap"
+   ],
+   "box": 4,
+   "box_class": "carrot",
+   "contain": 1.0,
+   "iou": 0.99,
+   "why": "cùng vị trí nhưng khác lớp: detection ghi carrot, panoptic ghi motorcycle (contain 1.00, bbox IoU 0.99)"
+  }
+ ]
+}
