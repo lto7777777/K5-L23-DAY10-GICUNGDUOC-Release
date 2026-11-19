@@ -1,0 +1,4 @@
+# Lô v2 được kiểm bằng sha256 của từng file (manifest.csv, H8) và bằng mã zip tái lập (H15).
+# Nếu git đổi LF thành CRLF lúc checkout thì các file nhãn trong handover/ đổi byte và hash trong
+# manifest.csv sai hết, dù không ai sửa gì. Tắt chuyển đổi ký tự xuống dòng cho toàn repo.
+* -text
