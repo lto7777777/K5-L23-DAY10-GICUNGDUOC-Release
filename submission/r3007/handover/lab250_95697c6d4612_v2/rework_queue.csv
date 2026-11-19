@@ -1,0 +1,10 @@
+image,type,annotator,reviewer,action
+000000004134,bbox_out_of_bounds,A02,Q01,kéo box về trong khung ảnh
+000000005529,duplicate_box,A05,Q03,"xoá box bị lặp, giữ một box cho mỗi vật"
+000000007511,missing_box,A05,Q03,bổ sung box cho vật còn thiếu
+000000007795,missing_box,A04,Q01,bổ sung box cho vật còn thiếu
+000000009483,class_swap,A04,Q01,gán lại đúng lớp cho box đã ghi sai
+000000013546,invalid_class,A04,Q02,sửa class_id về đúng dải 0-79 rồi kiểm lại cả ảnh
+000000013923,duplicate_box,A04,Q02,"xoá box bị lặp, giữ một box cho mỗi vật"
+000000022589,bbox_drift,A03,Q01,vẽ lại box bám sát vật
+000000023272,class_swap,A05,Q01,gán lại đúng lớp cho box đã ghi sai
