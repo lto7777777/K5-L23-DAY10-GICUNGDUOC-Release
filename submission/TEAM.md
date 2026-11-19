@@ -4,7 +4,7 @@ Bài mẫu do nhóm reviewer dựng trên seed luyện tập, để học viên 
 
 - Seed luyện tập: 3007
 - Lô v1: `lab250_95697c6d4612` · lô bàn giao: `lab250_95697c6d4612_v2`
-- Repo: <<URL repo nhóm>>
+- Repo: https://github.com/lto7777777/K5-L23-DAY10-GICUNGDUOC-Release
 
 | Họ và tên | MSHV | Tài khoản GitHub | Phần chính |
 |---|---|---|---|
