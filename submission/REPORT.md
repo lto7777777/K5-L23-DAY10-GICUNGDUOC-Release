@@ -114,7 +114,19 @@ PYTHONUTF8=1 python scripts/run_lab.py --seeds 3007
 ```
 
 `scripts/export_submission.py --import` gọi `inject_release.py` theo đúng kiểu đó, nên người chấm chạy
-trên Windows sẽ gặp lại lỗi này khi dựng lại lô của nhóm.
+trên Windows gặp lại đúng lỗi này khi dựng lại lô của nhóm. Nhóm đã thử: clone repo ra chỗ khác rồi
+chạy `python scripts/export_submission.py --import submission/r3007` thì chết với cùng traceback, thêm
+`PYTHONUTF8=1` thì chạy xong và `check_handover.py` ra 17 PASS. Bộ test của chính repo cũng vậy:
+`python tests/test_pipeline.py` ra 2 lỗi trên console mặc định, và `PYTHONUTF8=1 python tests/test_pipeline.py`
+ra 6 test OK (1 skip vì chưa có pool đề ẩn).
+
+**(4) Repo không có `.gitattributes`, nên hash của lô v2 hỏng sau khi clone trên Windows.**
+Git mặc định bật `core.autocrlf=true` trên Windows. File nhãn được commit dạng LF, nhưng lúc clone ra
+lại thành CRLF, nên byte đổi và sha256 trong `manifest.csv` sai hết. Nhóm đo trên bản clone sạch:
+**241/482 file lệch hash**, đủ để H8 FAIL và H15 FAIL ở máy người chấm dù không ai sửa gì trong lô.
+Nhóm thêm `.gitattributes` với `* -text` rồi clone lại: 0/482 lệch, mã zip khớp `.sha256`, và
+`check_handover.py` trên bản clone ra 17 PASS. Đề nghị đưa `.gitattributes` vào repo đề, vì nhóm nào
+cũng dính và sẽ mất điểm mục 3 mà không hiểu vì sao.
 
 **(2) `dedupe()` có thể tạo ra một ảnh trông y như `missing_box` mà không phải lỗi gài.**
 `inject_release.py` bỏ các box cùng lớp có IoU > 0.7 để `duplicate_box` chỉ còn lỗi gài. Ở
