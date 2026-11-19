@@ -1,12 +1,6 @@
-# Kiểm tra máy — Nguyễn Văn Thọ
+# Kiểm validator trên nhiều lô — Thọ
 
-Lệnh:
-
-```text
-py -3 -X utf8 tools/run_checks.py runs/clean runs/r3007 runs/r4242 --chi-tiet
-```
-
-Máy in ra:
+Lệnh: python tools/run_checks.py runs/clean runs/r3007 runs/r4242 --chi-tiet
 
 ```text
 lô                   ảnh  lỗi luật  ứng viên    giây
@@ -48,4 +42,4 @@ r4242
 Lô sạch clean: 0 lỗi luật (ĐẠT: lô sạch phải ra 0), 0 ứng viên là nhiễu tự nhiên.
 ```
 
-Ba lô ra đúng số Minh đã đo: clean 0/0, r3007 11/13, r4242 13/11. Lô sạch ra 0 lỗi luật, nên validator không báo thừa trên luật. Lô có lỗi gài chỉ cho biết máy có bắt được một số lỗi; lô sạch mới cho biết những gì bắt được không phải do validator tự bịa.
+Nhận xét: lô sạch ra 0 lỗi luật nên validator không báo thừa. Số lỗi luật giữa hai seed 3007 và 4242 khác nhau (11 với 13) là đúng, vì số lỗi gài thay đổi theo seed.
